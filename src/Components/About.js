@@ -7,14 +7,6 @@ class About extends Component {
 
     const name = this.props.data.name;
     const profilepic = "images/" + this.props.data.image;
-    const bio = this.props.data.bio;
-    const street = this.props.data.address.street;
-    const city = this.props.data.address.city;
-    const state = this.props.data.address.state;
-    const zip = this.props.data.address.zip;
-    const phone = this.props.data.phone;
-    const email = this.props.data.email;
-    const resumeDownload = this.props.data.resumedownload;
 
     return (
       <section id="about">
@@ -22,13 +14,68 @@ class About extends Component {
           <div className="row">
             <div className="three columns">
               <img
+                src={profilepic}
+                style={{ marginLeft: "50px" }}
+                alt={name}
+                className="profile-pic"
+              />
+              <h2 style={{ textAlign: "center" }}>Atharva Kurumbhatte</h2>
+              <p style={{ textAlign: "center" }}>PRESIDENT</p>
+              <p style={{ textAlign: "center", marginTop: "0px" }}>
+                Web Developer, <br /> Game Developer
+              </p>
+            </div>
+            <div className="three columns">
+              <img
+                style={{ marginLeft: "50px" }}
+                src={profilepic}
+                className="profile-pic"
+              />
+              <h2 style={{ textAlign: "center" }}>Mrudul Patel</h2>
+              <p style={{ textAlign: "center", marginTop: "40px" }}>
+                VICE PRESIDENT
+              </p>
+              <p style={{ textAlign: "center", marginTop: "30px" }}>
+                Full Stack Web Developer
+              </p>
+            </div>
+            <div className="three columns">
+              <img
+                style={{ marginLeft: "50px" }}
+                src={profilepic}
+                className="profile-pic"
+              />
+              <h2 style={{ textAlign: "center" }}>Mukund Patel</h2>
+              <p style={{ textAlign: "center", marginTop: "40px" }}>
+                SOCIAL MEDIA LEAD
+              </p>
+              <p style={{ textAlign: "center", marginTop: "30px" }}>
+                UI/ UX Designing
+              </p>
+            </div>
+            <div className="three columns">
+              <img
+                style={{ marginLeft: "50px" }}
+                src={profilepic}
+                className="profile-pic"
+              />
+              <h2 style={{ textAlign: "center" }}>Sakshi Bherde</h2>
+              <p style={{ textAlign: "center", marginTop: "40px" }}>
+                GIRLS REPRESENTATIVE
+              </p>
+              <p style={{ textAlign: "center", marginTop: "30px" }}>
+                Coming soon
+              </p>
+            </div>
+            {/* <div className="three columns">
+              <img
                 className="profile-pic"
                 src={profilepic}
                 alt="Nordic Giant Profile Pic"
               />
             </div>
             <div className="nine columns main-col">
-              <h2>About Me</h2>
+              <h2>About Us</h2>
 
               <p>{bio}</p>
               <div className="row">
@@ -54,9 +101,9 @@ class About extends Component {
                       <i className="fa fa-download"></i>Download Resume
                     </a>
                   </p>
-                </div>
-              </div>
-            </div>
+                </div> */}
+            {/* </div> */}
+            {/* </div> */}
           </div>
         </Fade>
       </section>

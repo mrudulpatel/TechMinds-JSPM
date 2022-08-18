@@ -59,13 +59,13 @@ class Header extends Component {
         <div className="row banner">
           <div className="banner-text">
             <Fade bottom>
-              <h1 className="responsive-headline">{name}</h1>
+              <h1 className="responsive-headline">TechMinds@JSPM</h1>
             </Fade>
             <Fade bottom duration={1200}>
-              <h3>{description}.</h3>
+              <h3>A Club for all students of computer deptartment in JSPM NTC</h3>
             </Fade>
             <hr />
-            <Fade bottom duration={2000}>
+            {/* <Fade bottom duration={2000}>
               <ul className="social">
                 <a href={project} className="button btn project-btn">
                   <i className="fa fa-book"></i>Project
@@ -74,7 +74,7 @@ class Header extends Component {
                   <i className="fa fa-github"></i>Github
                 </a>
               </ul>
-            </Fade>
+            </Fade> */}
           </div>
         </div>
 
